@@ -17,7 +17,7 @@ public class ResponseSingleton {
 
     public void populate() {
         for (int i = 0; i < 100; i++) {
-            responseList.add(getRandomResponceFromTwo("Pass", "Fail"));
+            responseList.add(getRandomResponseFromTwo("Pass", "Fail"));
         }
     }
 
@@ -34,7 +34,7 @@ public class ResponseSingleton {
         responseList.set(i, s);
     }
 
-    private String getRandomResponceFromTwo(String s1, String s2) {
+    private String getRandomResponseFromTwo(String s1, String s2) {
 
         double random = Math.random();
 

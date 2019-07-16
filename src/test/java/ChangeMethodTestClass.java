@@ -4,8 +4,8 @@ import org.testng.annotations.*;
 public class ChangeMethodTestClass extends Assert {
 
     private ResponseSingleton responseSingleton;
-    private int index;
-    private String value;
+    private int index = 1;
+    private String value = "test";
 
     public ChangeMethodTestClass(int index, String value) {
         this.index = index;
@@ -30,7 +30,7 @@ public class ChangeMethodTestClass extends Assert {
     }
 
     @Test(dataProvider = "testChangeData")
-    public void testChangeMethod(@Optional("1") int i, @Optional("test") String value) {
+    public void testChangeMethod(int i, String value) {
 
         responseSingleton.change(i, value);
         String current = responseSingleton.getByIndex(i);
