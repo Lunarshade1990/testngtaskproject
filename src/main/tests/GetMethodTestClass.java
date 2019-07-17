@@ -1,3 +1,4 @@
+import com.lunarshade.testapp.ResponseSingleton;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

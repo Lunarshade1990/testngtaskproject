@@ -1,3 +1,5 @@
+package com.lunarshade.testapp;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +28,7 @@ public class ResponseSingleton {
         return responseList.get(randomIndex);
     }
 
-    protected String getByIndex(int i) {
+    public String getByIndex(int i) {
         return responseList.get(i);
     }
 
